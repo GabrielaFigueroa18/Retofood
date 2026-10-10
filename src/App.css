@@ -1,0 +1,362 @@
+/* ===============================
+   PANTALLA DE REGISTRO
+================================ */
+
+.register-page {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    #fffdf9 0%,
+    #fffaf0 65%,
+    #fff0bd 100%
+  );
+
+  padding: 30px 24px;
+}
+
+
+/* ===============================
+   CONTENEDOR
+================================ */
+
+.register-container {
+  width: 100%;
+  max-width: 430px;
+}
+
+
+/* ===============================
+   LOGO
+================================ */
+
+.register-logo {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 22px;
+}
+
+.register-logo img {
+  width: 110px;
+  height: 75px;
+
+  object-fit: contain;
+}
+
+
+/* ===============================
+   TÍTULO
+================================ */
+
+.register-header {
+  margin-bottom: 25px;
+}
+
+.register-header h1 {
+  margin: 0 0 6px;
+
+  color: #29201c;
+
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.register-header p {
+  margin: 0;
+
+  color: #795b4d;
+
+  font-size: 13px;
+}
+
+
+/* ===============================
+   FORMULARIO
+================================ */
+
+.register-form {
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #201714;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 15px;
+
+  border: 1px solid #ead6cb;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  outline: none;
+
+  color: #654d42;
+
+  font-size: 12px;
+
+  transition: 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #b98b7c;
+}
+
+.form-group select {
+  color: #aa7e70;
+  cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ed6b36;
+
+  box-shadow:
+    0 0 0 3px rgba(237, 107, 54, 0.08);
+}
+
+
+/* ===============================
+   CONTRASEÑA
+================================ */
+
+.password-wrapper {
+  width: 100%;
+
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 50px;
+}
+
+.eye-button {
+  position: absolute;
+
+  top: 50%;
+  right: 14px;
+
+  transform: translateY(-50%);
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+
+/* ===============================
+   TÉRMINOS
+================================ */
+
+.terms {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 4px 0 18px;
+
+  color: #6d5146;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.terms input {
+  width: 14px;
+  height: 14px;
+
+  accent-color: #ed6b36;
+}
+
+.terms strong {
+  color: #ef6234;
+
+  font-weight: 600;
+}
+
+
+/* ===============================
+   BOTÓN
+================================ */
+
+.create-button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #f2b39a;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.create-button:hover {
+  background: #ed6b36;
+}
+
+
+/* ===============================
+   LOGIN
+================================ */
+
+.login-text {
+  margin-top: 20px;
+
+  text-align: center;
+
+  color: #644b40;
+
+  font-size: 11px;
+}
+
+.login-text button {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #ed6235;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-text button:hover {
+  text-decoration: underline;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .register-page {
+    padding: 25px 30px;
+  }
+
+  .register-container {
+    max-width: 420px;
+  }
+}
+
+
+/* ===============================
+   MÓVIL
+================================ */
+
+@media (max-width: 480px) {
+
+  .register-page {
+    min-height: 100svh;
+
+    padding: 18px 30px 16px;
+  }
+
+  .register-container {
+    max-width: 380px;
+  }
+
+  .register-logo {
+    margin-bottom: 18px;
+  }
+
+  .register-logo img {
+    width: 95px;
+    height: 65px;
+  }
+
+  .register-header {
+    margin-bottom: 22px;
+  }
+
+  .register-header h1 {
+    font-size: 24px;
+  }
+
+  .register-header p {
+    font-size: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 45px;
+
+    font-size: 11px;
+  }
+
+  .create-button {
+    height: 48px;
+  }
+
+  .login-text {
+    margin-top: 17px;
+  }
+}
+
+
+/* ===============================
+   MÓVILES PEQUEÑOS
+================================ */
+
+@media (max-width: 360px) {
+
+  .register-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .register-header h1 {
+    font-size: 22px;
+  }
+}
